@@ -111,3 +111,17 @@ button {
     text-align: center;
     
 }
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding-top: 5vh;
+}
+
+.redes-sociais img {
+    width: 3vw;
+    margin: 0 1vw;
+}
