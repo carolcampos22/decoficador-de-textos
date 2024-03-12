@@ -71,29 +71,29 @@ function encriptar(stringEncriptada) {
 function copiarTexto() {
     var mensagemParaCopiar = document.querySelector(".mensagem");
 
-    // Seleciona o texto dentro da área de texto
+    
     mensagemParaCopiar.select();
 
     try {
-        // Tenta copiar o texto para a área de transferência usando a API Clipboard
+        
         navigator.clipboard.writeText(mensagemParaCopiar.value)
             .then(() => {
-                // Alerta o usuário que o texto foi copiado
+                
                 textoCopiado = document.querySelector(".botao-copiar")
                 textoCopiado.innerHTML = "Copiado!"        
                 
-                // Restaura o texto do botão após um atraso de 2 segundos (2000 milissegundos)
+                
                 setTimeout(function() {
                     textoCopiado.innerHTML = "Copiar";
                 }, 3000); 
             })
             .catch(err => {
-                // Se houver um erro ao copiar, trata o erro aqui
+                
                 console.error('Erro ao copiar texto:', err);
                 alert('Erro ao copiar texto. Por favor, copie manualmente.');
             });
     } catch (err) {
-        // Se o navegador não suportar a API Clipboard, trata o erro aqui
+    
         console.error('API Clipboard não suportada:', err);
         alert('Este navegador não suporta a função de copiar para a área de transferência. Por favor, copie manualmente.');
     }
