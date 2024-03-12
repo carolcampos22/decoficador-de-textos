@@ -54,7 +54,7 @@ textarea{
     font-weight: bold;
     color: black;
     border-radius: 32px;
-    padding: .8vw;
+    padding: 1rem;
 }
 
 
@@ -149,6 +149,7 @@ footer{
 
     .mensagem{
         width: 90%;
+        padding: 1rem;
     }
 
     .buttons button {
