@@ -30,12 +30,24 @@ main {
     min-height: 90vh;
 }
 
+.text{
+    width: 50vw;
+    height: 90vh;
+}
+
 textarea{
     resize: none;
     background-color: var(--bg-color);
 }
 
+.text-area{
+    width: 100%;
+    height: 80%;
+}
+
 .mensagem{
+    width: 21vw;
+    height: 80vh;
     background-image: url("./assets/image.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -124,4 +136,66 @@ footer{
 .redes-sociais img {
     width: 3vw;
     margin: 0 1vw;
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        gap: 1vw;
+    }
+
+    .result {
+        width: 30vw;    
+    }
+
+    .mensagem{
+        width: 90%;
+    }
+
+    .buttons button {
+        width: 12vw;
+    }
+
+    .redes-sociais img {
+        width: 3vw;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center;
+    }
+    
+    header img {
+        margin-left: 0;
+    }
+    
+    main {
+        flex-direction: column;
+    }
+    
+    .text, .result {
+        width: 90%;
+        margin: 2vh 0;
+    }
+
+    .result {
+        width: 100%;
+    }
+
+    
+
+    .buttons {
+        width: 90vw;
+        flex-direction: column;
+        gap: 2vh;
+    }
+
+    .buttons button, button {
+        width: 50%;
+    }
+
+    .redes-sociais img {
+        width: 8vw;
+    }
 }
